@@ -1,6 +1,7 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 body{
     background-color: #141A12;
@@ -10,43 +11,75 @@ body{
 a{
     text-decoration: none;
     margin: 0 5px;
+    color: #BFE6AD;
 }
 header{
     display: flex;
-    justify-content: space-between;
-    padding: 40px;
+    justify-content: space-around;
+    padding: 30px 0;
+}
+.hero{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .nombre{
     display: flex;
-    margin: 0;
-    padding: 0;
+    color: #BFE6AD;
 }
-main{
+.titulo{
+    margin: 30px;
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     text-align: center;
-    
 }
+.titulo-profesion{
+    color: #F9F4DA;
+    margin: 5px;
+    font-size: 35px;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+}
+.titulo-relleno{
+    background-color: #BFE6AD;
+    width: 20px;
+    height: 50px;
+}
+
+.nombre-titulo{
+    padding-left: 30px;
+    width: 15px;
+    height: 10px;
+    font-size: 10px;
+}
+
 .seccion-principal{
     width: 75%;
     height: 40vh;
     background-color: #BFE6AD;
-    margin: auto;
     display: flex;
-
+    margin: 30px;
 }
+
 .seccion-principal-redes{
-    flex-grow: 1;
+    width: 30%;
     padding: 10px;
     display: flex;
-    flex-direction: column
+    flex-direction: column;
 }
 
 .seccion-principal-redes-titulo{
-    flex-grow: 1;
     margin: 10px;
+    color: #141A12;
 }
 .seccion-principal-redes-paginas{
     flex-grow: 1;
     text-align: end;
+    color: #141A12;
 }
 .seccion-principal-lenguajes{
     flex-grow: 2;
@@ -57,6 +90,7 @@ main{
 }
 .items1{
     text-align: left;
+    color: #BEBBA8;
 }
 .texto{
     background-color: antiquewhite;
@@ -65,21 +99,54 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    color: #181B15;
+}
+
+.sobre-mi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.seccion-sobre-mi{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    color: #F8FAF9;
+    width: 80%;
 }
 .sobre-mi-titulo{
-    text-align: left;
-    padding: 30px;
-
+    margin: 60px;
+    display: flex;
+}
+.lineas{
+    background-color: #BEBBA8;
+    width: 70%;
+    height: 5%;
+}
+.linea-vertical{
+    width: 70%;
+    height: 5%;
 }
 .sobre-mi-informacion{
     display: flex;
-    padding: 30px;
 }
-.sobre-mi-informacion-quien-soy{
-    flex-grow: 1;
+.sobre-mi-informacion-titulo{
+    display: flex;
+    margin: 5px;
+}
+.llaves{
+    color: #2B6D26;
+}
+.sobre-mi-informacion-fullstack{
+    width: 45%;
+    padding-left: 15px;
+    margin-bottom: 25px;
+
 }
 .sobre-mi-informacion-mi-experiencia{
-    flex-grow: 1;
+    width: 45%;
+    padding-right: 15px;
+    margin-bottom: 25px;
 }
 .lenguajes{
     background-color: #262626;
