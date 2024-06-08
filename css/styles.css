@@ -19,11 +19,29 @@ a{
     text-decoration: none;
     margin: 0 5px;
     color: #BFE6AD;
+    font-size: 10px;
+    transition: 1.5s;
 }
-.redes-sociales svg{
+.redes-sociales{
+    display: flex;
+}
+.contenedor-redes{
+    display: flex;
+    transition: 1.5s;
+    height: 25%;
+}
+.contenedor-redes a{
+    color: #F8FAF9;
+}
+.contenedor-redes svg{
     width: 15px;
     height: 12px;
     color: #F9F4DA;
+    margin: 0 5px;
+}
+.contenedor-redes:hover,a:hover, .contenedor-redes svg:hover{
+    background-color: #BEE5AC;
+    color: #141A12;
 }
 .nombre{
     display: flex;
@@ -313,6 +331,12 @@ a{
 .icono{
     width: 70px;
     height: 70px;
+    transition: 1.5s;
+}
+.icono:hover{
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
 }
 /*Fin seccion lenguajes*/
 .mira-proyectos{
@@ -352,11 +376,12 @@ a{
     width: 520px;
     height: 230px;
     margin: 15px 5px;
+    cursor: pointer;
+    transition:1.5s;
 }
-i{
-    background-color: #2B6D26;
-    height: 10%;
-    width: 10%;
+.imagen-trabajos:hover{
+    width: 540px;
+    height: 250px;
 }
 footer{
     background-color: #262626;
