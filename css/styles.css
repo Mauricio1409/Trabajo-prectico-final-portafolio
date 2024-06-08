@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: "Acumin Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    
 }
 body{
     background-color: #141A12;
@@ -14,6 +15,7 @@ header{
     display: flex;
     justify-content: space-around;
     padding: 30px 0;
+    font-weight: 900;
 }
 a{
     text-decoration: none;
@@ -46,7 +48,7 @@ a{
 .nombre{
     display: flex;
     color: #BFE6AD;
-    width: 100px;
+    width: 130px;
     height: 50px;
 }
 .nombre-texto{
@@ -68,9 +70,12 @@ a{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-weight: 900;
 }
 
-
+h1{
+    font-weight: 900;
+}
 /*Tituo del hero*/
 .titulo{
     margin: 30px;
@@ -79,19 +84,20 @@ a{
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    
 }
 .titulo-profesion{
     color: #F9F4DA;
     margin: 5px;
-    font-size: 35px;
+    font-size: 45px;
     display: flex;
     text-align: center;
     justify-content: center;
 }
 .titulo-relleno{
     background-color: #BFE6AD;
-    width: 20px;
-    height: 50px;
+    width: 15px;
+    height: 60px;
 }
 
 
@@ -105,7 +111,7 @@ a{
 /*Cuadro principal*/
 .seccion-principal{
     width: 75%;
-    height: 40vh;
+    height: 50vh;
     background-color: #BFE6AD;
     display: flex;
     margin: 30px;
@@ -121,14 +127,22 @@ a{
 .seccion-principal-redes-titulo{
     margin: 10px;
     color: #141A12;
-    height: 40%;
+    height: 50%;
+    font-size: 27px;
+    letter-spacing: 0;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-left: 20px;
 }
 .seccion-principal-redes-paginas{
-    height: 60%;
+    height: 50%;
     text-align: end;
     color: #141A12;
     display: flex;
     padding: 0;
+    font-size: 11px;
+    letter-spacing: 0;
 }
 .seccion-principal-redes-paginas-nombres{
     width: 75%;
@@ -156,6 +170,7 @@ a{
     align-items: center;
     flex-direction: column;
     justify-content: center;
+    
 }
 .iconos-redes{
     background-color: white;
@@ -176,18 +191,28 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: end;
+    letter-spacing: 0;
+
 }
 .items1{
     text-align: left;
     color: #BEBBA8;
+    font-size: 20px;
+    padding: 10px;
+    
 }
 
 .items1-texto{
-    margin: 15px 0;
+    margin: 5px 0;
+    font-weight: 1000;
+}
+.items1 p{
+    font-size: 12px;
+    margin-top: 30px;
 }
 .texto{
-    background-color: antiquewhite;
-    height: 20%;
+    background-color: #F9F4DA;
+    height: 10%;
     text-align: center;
     display: flex;
     padding: 5px;
@@ -197,6 +222,28 @@ a{
 }
 .texto-central{
     display: flex;
+    font-size: 12px;
+}
+.y-mas{
+    display: flex;
+    width: 50%;
+}
+.linea-horizontal-hero{
+    position: relative;
+    top: 40px;
+    height: 2px;
+    background-color: #a0cfa0;
+    flex-grow: 1;
+    margin-left: 10px;
+}
+.linea-vertical-hero{
+    position: relative;
+    top: 40px;
+    left: 290px;
+    height: 20px;
+    background-color: #a0cfa0;
+    margin-left: 10px;
+    width: 2px;
 }
 .texto-central p{
     margin: 0 7px;
@@ -214,21 +261,54 @@ a{
     justify-content: center;
     flex-direction: column;
     color: #F8FAF9;
-    width: 80%;
+    width: 85%;
 }
 /*Titulo*/
 .sobre-mi-titulo{
-    margin: 60px;
     display: flex;
+    align-items: center;
+    margin: 60px;
+    width: 75%;
+}
+.sobre-mi-informacion-titulo-texto{
+    margin-right: 10px;
+}
+.sobre-mi-titulo p{
+    font-size: 10px;
 }
 .lineas{
-    background-color: #BEBBA8;
-    width: 70%;
-    height: 5%;
+    position: relative;
+    top: 65px;
+    left: 10px;
+    display: flex;
+    flex-direction: column;
 }
-.linea-vertical{
-    width: 70%;
-    height: 5%;
+.linea-horizontal{
+    height: 2px;
+    background-color: #a0cfa0;
+    flex-grow: 1;
+    margin-left: 10px;
+    width: 52vw;   
+}
+.lineas-v{
+    display: flex;
+}
+.linea-vertical1{
+    position: relative;
+    left: 710px;
+    height: 120px;
+    background-color: #a0cfa0;
+    margin-left: 10px;
+    width: 2px;  
+}
+.linea-vertical2{
+    position: relative;
+    left: 200px;
+    height: 120px;
+    background-color: #a0cfa0;
+    margin-left: 10px;
+    width: 2px; 
+    
 }
 
 /*Informacion de experiencia y de mas*/
@@ -347,6 +427,7 @@ a{
     height: 12vh;
     margin-bottom: 15px;
     padding: 10px;
+    color: #BFE6AD;
 }
 
 
@@ -357,7 +438,7 @@ a{
     align-items: center;
 }
 .trabajos{
-    height: 100vh;
+    height: 110vh;
     width: 80vw;
     display: flex;
     justify-content: center;
@@ -371,6 +452,11 @@ a{
     flex-direction: column;
     width: 80%;
     color: #FAFBFA;
+    margin-top: 50px;
+    font-size: 20px;
+}
+.titulo-trabajos p{
+    font-size: 12px;
 }
 .imagen-trabajos{
     width: 520px;
