@@ -8,16 +8,40 @@ body{
     
     
 }
-a{
-    text-decoration: none;
-    margin: 0 5px;
-    color: #BFE6AD;
-}
+
 /*Inicio de header*/
 header{
     display: flex;
     justify-content: space-around;
     padding: 30px 0;
+}
+a{
+    text-decoration: none;
+    margin: 0 5px;
+    color: #BFE6AD;
+}
+.redes-sociales svg{
+    width: 15px;
+    height: 12px;
+    color: #F9F4DA;
+}
+.nombre{
+    display: flex;
+    color: #BFE6AD;
+    width: 100px;
+    height: 50px;
+}
+.nombre-texto{
+    width: 50%;
+    font-size: 10px;
+}
+.nombre-imagen{
+    height: 20px;
+    width: 50%;
+    background-color: #BFE6AD;
+    margin: 5px;
+    border-top-right-radius: 25%;
+    border-bottom-right-radius: 25%;
 }
 /*Final de header*/
 /*Inicio de hero*/
@@ -27,10 +51,7 @@ header{
     justify-content: center;
     align-items: center;
 }
-.nombre{
-    display: flex;
-    color: #BFE6AD;
-}
+
 
 /*Tituo del hero*/
 .titulo{
@@ -75,7 +96,6 @@ header{
 /*Cuadro redes*/
 .seccion-principal-redes{
     width: 30%;
-    padding: 10px;
     display: flex;
     flex-direction: column;
 }
@@ -83,12 +103,53 @@ header{
 .seccion-principal-redes-titulo{
     margin: 10px;
     color: #141A12;
+    height: 40%;
 }
 .seccion-principal-redes-paginas{
-    flex-grow: 1;
+    height: 60%;
     text-align: end;
     color: #141A12;
+    display: flex;
+    padding: 0;
 }
+.seccion-principal-redes-paginas-nombres{
+    width: 75%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+}
+.redes{
+    display: flex;
+    margin: 15px 5px;
+}
+.redes p{
+    margin-right: 5px;
+}
+.seccion-principal-redes-paginas-iconos{
+    width: 25%;
+    height: 100%;
+    background-color: #141A12;
+    border-top-left-radius: 45px;
+    border-top-right-radius: 20px; 
+    border-bottom-left-radius: 25px;   
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.iconos-redes{
+    background-color: white;
+    height: 30px;
+    width: 30px;
+    margin: 10px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 /*Cuadro de lenguajes seccion principal*/
 .seccion-principal-lenguajes{
@@ -102,14 +163,25 @@ header{
     text-align: left;
     color: #BEBBA8;
 }
+
+.items1-texto{
+    margin: 15px 0;
+}
 .texto{
     background-color: antiquewhite;
     height: 20%;
     text-align: center;
     display: flex;
-    justify-content: center;
+    padding: 5px;
+    justify-content: space-between;
     align-items: center;
     color: #181B15;
+}
+.texto-central{
+    display: flex;
+}
+.texto-central p{
+    margin: 0 7px;
 }
 
 /*Final de hero*/
@@ -151,6 +223,8 @@ header{
 }
 .llaves{
     color: #2B6D26;
+    font-size: 20px;
+    margin: 0 5px;
 }
 .sobre-mi-informacion-fullstack{
     width: 45%;
@@ -174,17 +248,42 @@ header{
     align-items: end;
     justify-content: center;
     height: 25%;
+    color: 91ac84;
 }
 .nombre-seccion{
     width: 33%;
     display: flex;
 }
 .lenguajes{
-    flex-grow: 1;
+    width: 33%;
     display: flex;
     justify-content: center;
     align-items: center;
 }
+.icono-lenguaje,.color-lenguajes{
+    fill: #91AC84;
+    color: #91AC84;
+}
+.icono-front,.color-front{
+    fill: #54604F;
+    color: #54604F;
+}
+.icono-back,.color-back{
+    fill: #7B946F;
+    color: #7B946F;
+}
+.icono-bd,.color-bd{
+    fill: #3A4437;
+    color: #3A4437;
+
+}
+.seccion-media-habilidades{
+    margin-bottom: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    text-align: center;
+}
+
 .numero-de-seccion{
     width: 33%;
     text-align: end;
@@ -196,12 +295,6 @@ header{
     justify-content: space-between;
     align-items: end;
     height: 25%;
-}
-.librerias-front{
-    width: 33%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
 }
 .back{
     background-color: #1F211E;
@@ -217,15 +310,21 @@ header{
     align-items: end;
     height: 25%;
 }
+.icono{
+    width: 70px;
+    height: 70px;
+}
 /*Fin seccion lenguajes*/
 .mira-proyectos{
     background-color: #262626;
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     height: 12vh;
     margin-bottom: 15px;
+    padding: 10px;
 }
+
 
 /*Inicio de seccion trabajos*/
 .seccion-trabajos{
@@ -246,14 +345,19 @@ header{
     display: flex;
     text-align: start;
     flex-direction: column;
-    width: 100%;
+    width: 80%;
+    color: #FAFBFA;
 }
 .imagen-trabajos{
     width: 520px;
     height: 230px;
     margin: 15px 5px;
 }
-
+i{
+    background-color: #2B6D26;
+    height: 10%;
+    width: 10%;
+}
 footer{
     background-color: #262626;
     display: flex;
