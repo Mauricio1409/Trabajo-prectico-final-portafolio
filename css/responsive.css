@@ -247,7 +247,7 @@
     }
 }
 
-@media (min-height: 600px) {
+@media (max-height: 600px) {
     /* Estilos para tabletas grandes */
     .circulo{
         position: absolute;
@@ -307,6 +307,6 @@
         width: 150px;
         height: 150px;
     }
-
+    
 }
 
