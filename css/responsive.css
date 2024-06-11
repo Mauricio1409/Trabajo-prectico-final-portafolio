@@ -37,7 +37,6 @@
     }
     .table-container{
         position: absolute;
-        top: ;
         width: 150px;
         height: 150px;
     }
@@ -51,10 +50,6 @@
     .redes-sociales-footer{
         display: flex;
         flex-direction: column;
-    }
-    .sobre-mi{
-        margin-top: 30vh;
-
     }
     .sobre-mi-informacion{
         display: flex;
@@ -72,8 +67,12 @@
     h1{
         font-size: 20px;
     }
+    
 }
 @media(max-width: 768px){
+    .items1{
+        width: 100%;
+    }
     h1{
         font-size: 30px;
     }
@@ -100,6 +99,9 @@
   
 }
 @media(max-width: 1024px){
+    .contenedor-contactame{
+        width: 60%;
+    }
     .table-container{
         display: none;
     }
@@ -263,6 +265,10 @@
     }
     .sobre-mi-titulo{
         margin-top: 20vh;
+    }
+    .imagen-trabajos{
+        height: 25%;
+
     }
 }
 
